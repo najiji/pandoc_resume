@@ -3,9 +3,13 @@ Johnny Coder
 
 ----
 
->  In this style, the resume starts with a blockquote, where
->  you can briefly list your specialties, or include a salient
->  quote. Ending a line with a backslash forces a line break.
+------------------- -----------------------------------------
+**Address**         Flower Street 69\
+**Email**           john.doe@awesomecompany.com\
+**Phone**           +1 123 456 34 \
+**Nationality**     Cayman Islands \
+**Date of birth**   February 30, 2054 \
+------------------- -----------------------------------------
 
 ----
 
@@ -72,7 +76,7 @@ Programming Languages
 :   **second-lang:** Description of your experience with second-lang,
     perhaps again including a [link] [ref], this time placing the url
     reference elsewhere in the document to reduce clutter (see source
-    file). 
+    file).
 
 :   **obscure-but-impressive-lang:** We both know this one's pushing
     it.

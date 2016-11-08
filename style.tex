@@ -1,13 +1,13 @@
 % Copyright 2013 Christophe-Marie Duquesne <chmd@chmd.fr>
 % Copyright 2014 Mark Szepieniec <http://github.com/mszep>
-% 
+%
 % ConText style for making a resume with pandoc. Inspired by moderncv.
-% 
+%
 % This CSS document is delivered to you under the CC BY-SA 3.0 License.
 % https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
 
 \startmode[*mkii]
-  \enableregime[utf-8]  
+  \enableregime[utf-8]
   \setupcolors[state=start]
 \stopmode
 $if(mainlang)$
@@ -18,6 +18,7 @@ $endif$
 \definecolor[titlegrey][h=757575]
 \definecolor[sectioncolor][h=397249]
 \definecolor[rulecolor][h=9cb770]
+\definecolor[black][h=000000]
 
 % Enable hyperlinks
 \setupinteraction[state=start, color=sectioncolor]
@@ -37,9 +38,8 @@ $endif$
 \setupblackrules[width=31mm, color=rulecolor]
 
 \setuphead[chapter]      [style=\tfd]
-\setuphead[section]      [style=\tfd\bf, color=titlegrey, align=middle]
-\setuphead[subsection]   [style=\tfb\bf, color=sectioncolor, align=right,
-                          before={\leavevmode\blackrule\hspace}]
+\setuphead[section]      [style=\tfd\bf, color=black, align=right]
+\setuphead[subsection]   [style=\tfb\bf, color=black, align=right]
 \setuphead[subsubsection][style=\bf]
 
 $if(number-sections)$
@@ -58,15 +58,15 @@ $endif$
 \setupitemize[indentnext=no]
 
 \setupfloat[figure][default={here,nonumber}]
-\setupfloat[table][default={here,nonumber}]
+\setupfloat[table][default={here,nonumber}, location=left]
 
-\setuptables[textwidth=max, HL=none]
+\setuptables[HL=none, align=left]
 
 \setupthinrules[width=15em] % width of horizontal rules
 
 \setupdelimitedtext
   [blockquote]
-  [before={\setupalign[middle]},
+  [before={\setupalign[right]},
    indentnext=no,
   ]
 
